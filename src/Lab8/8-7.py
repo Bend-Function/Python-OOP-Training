@@ -1,17 +1,21 @@
 class Person:
     
+    number_of_people = 0
+
     def __init__(self, name, age):
         self.__name = name
         self.__age = age
+        
+        Person.number_of_people += 1
+        print("Added 1 person")
+
 
     @property
     def age(self):
-        print("Getting the age")
         return self.__age
 
     @age.setter
     def age(self, value):
-        print("Setting the age")
         if value < 0 or value > 100:
             print("Age value must be less than 100 and greater than 0.")
             self.__age = 0
@@ -19,7 +23,7 @@ class Person:
             self.__age = value
 
     @staticmethod
-    def message(self):
+    def message():
         print("Hello")
 
     def details(self):
@@ -35,10 +39,16 @@ class Person:
             self.__name = value
         else:
             print("Name value must be str not none.")
+
+    @classmethod
+    def count_population(cls):
+        print("There are {0} people".format(Person.number_of_people))
+
             
 if __name__ == '__main__':
-    sam = Person("Sam", 20)
-    james = Person("James", 21)
+    Person.message()
+    tim = Person("Tim", 29)
+    Person.count_population()
+    alice = Person("Alice", 25)
+    Person.count_population()
 
-    sam.age = 30
-    print(sam.age)
