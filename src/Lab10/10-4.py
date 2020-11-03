@@ -23,7 +23,7 @@ class TV(Electronic):
     def __init__(self, company, size):
         Electronic.__init__(self, company)
         self.size = size
-    
+
     def turn_on(self):
         print("Push button on remote")
         

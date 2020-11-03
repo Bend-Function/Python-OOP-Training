@@ -8,7 +8,7 @@ class Animal:
     def display_info(self):
         print("Type: ", self.type)
 
- 
+# Function
 class Dog(Animal):
 
     def __init__(self, type, weight):
@@ -18,7 +18,7 @@ class Dog(Animal):
     def sound(self):
         print("Woof")
 
-
+# Function
 class Cat(Animal):
 
     def __init__(self, type, colour):

@@ -20,7 +20,7 @@ class Car(Vehicle):
     def display_vehicle(self):
         print("{0} has {1} wheels and {2} doors".format(self.name, self.number_of_wheels, self.number_of_doors))
 
-
+# Function
 class Bike(Vehicle):
 
     def __init__(self, name, number_of_wheels, type):
