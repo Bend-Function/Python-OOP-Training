@@ -1,3 +1,7 @@
+# GitHub repo: https://github.com/Bend-Function/Python-OOP-Training
+# DO NOT COPY!
+# Author: Bend-Function
+
 from abc import ABC, abstractmethod
 
 class Vehicle:
@@ -6,6 +10,7 @@ class Vehicle:
         self.colour = colour
     
 # Interface
+# Author: Function
 class I_air_vehicle(ABC):
 
     @abstractmethod

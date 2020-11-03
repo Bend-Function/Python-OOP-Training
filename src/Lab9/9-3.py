@@ -1,3 +1,7 @@
+# GitHub repo: https://github.com/Bend-Function/Python-OOP-Training
+# DO NOT COPY!
+# Author: Bend-Function
+
 class shape:
 
     def __init__(self, colour):
@@ -31,7 +35,6 @@ class Triangle(shape):
 
     def calculate_area(self):
         self.area = self.width * self.height / 2
-
         return self.area
 
     @property

@@ -1,3 +1,7 @@
+# GitHub repo: https://github.com/Bend-Function/Python-OOP-Training
+# DO NOT COPY!
+# Author: Bend-Function
+
 class Animal:
     def __init__(self, type):
         self.type = type
