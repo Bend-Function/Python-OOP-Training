@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Vehicle:
+class Vehicle(ABC):
 
     def __init__(self, name, number_of_wheels):
         self.name = name
